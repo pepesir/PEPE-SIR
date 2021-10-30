@@ -1578,7 +1578,7 @@ Just Learn to Make Bots 🐶
  
 𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
 `
-sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`${prefix}credit`,buttonText:{displayText:'THANKS TO'},type:1},{buttonId:`${prefix}script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`credit`,buttonText:{displayText:'THANKS TO'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
 case 'credit':
@@ -1656,7 +1656,7 @@ get_result = await getBuffer(`https://dapuhy-api.herokuapp.com/api/anime/storyan
 kodi = `*_CLICK NEXT FOR MORE_*`
    sendButVideo(from, kodi, `${watermark}`, get_result, [                      
           {
-            buttonId: `${prefix+command}`,
+            buttonId: `storyanime`,
             buttonText: {
               displayText: `NEXT`,
             },
@@ -1676,21 +1676,21 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        reply('No Sis')
         sendButMessage(from, `Hi ${pushname} 🐶`, `What do you want to answer??`, [
           {
-            buttonId: `${prefix}oklah`,
+            buttonId: `oklah`,
             buttonText: {
               displayText: `WHY:)`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}apaan6`,
+            buttonId: `apaan6`,
             buttonText: {
               displayText: `BYE`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}awokkk`,
+            buttonId: `awokkk`,
             buttonText: {
               displayText: `END :/`,
             },
@@ -1742,7 +1742,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                sendKontak(from, `${owner}`, `${fakeyoi}`, 'Busy!!')
                await sleep(1000)
                haibg =`Hi ${pushname}\nThats my owner, What do you want to know about??`
-               buttons = [{buttonId: `mygithub`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`${prefix}iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
+               buttons = [{buttonId: `mygithub`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Created By ${fakeyoi} 🌿`, buttons: buttons, headerType: 1 }
                prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
                xeon.relayWAMessage(prep)
@@ -2043,7 +2043,7 @@ menu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 `
 sendButMessage(from, menu, `𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
           {
-            buttonId: `${prefix}command`,
+            buttonId: `command`,
             buttonText: {
               displayText: `𝘽𝙖𝙘𝙠 𝙈𝙚𝙣𝙪 シ︎`,
             },
@@ -2096,7 +2096,7 @@ menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
 `
 sendButMessage(from, menu, ` 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
           {
-            buttonId: `${prefix}command`,
+            buttonId: `command`,
             buttonText: {
               displayText: `⬡ BACK TO MENU `,
             },
@@ -2159,7 +2159,7 @@ menu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 `
 sendButMessage(from, menu, `𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
           {
-            buttonId: `${prefix}command`,
+            buttonId: `command`,
             buttonText: {
               displayText: `⬡ BACK TO MENU `,
             },
@@ -2182,7 +2182,7 @@ menu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
 `
 sendButMessage(from, menu, ` 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
           {
-            buttonId: `${prefix}command`,
+            buttonId: `command`,
             buttonText: {
               displayText: `⬡ BACK TO MENU `,
             },
@@ -2269,7 +2269,7 @@ menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 `
 sendButMessage(from, menu, ` 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
           {
-            buttonId: `${prefix}command`,
+            buttonId: `command`,
             buttonText: {
               displayText: `⬡ BACK TO MENU `,
             },
@@ -2320,7 +2320,7 @@ menu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 `
 sendButMessage(from, menu, ` 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
           {
-            buttonId: `${prefix}command`,
+            buttonId: `command`,
             buttonText: {
               displayText: `⬡ BACK TO MENU `,
             },
@@ -2968,14 +2968,14 @@ break
         } else if (!q) {
           sendButMessage(from, `MODE AUTOJOIN`, `Please choose one`, [
             {
-              buttonId: `${prefix}autojoin on`,
+              buttonId: `autojoin on`,
               buttonText: {
                 displayText: `on`,
               },
               type: 1,
             },
             {
-              buttonId: `${prefix}autojoin off`,
+              buttonId: `autojoin off`,
               buttonText: {
                 displayText: `off`,
               },
@@ -3002,14 +3002,14 @@ break
         } else if (!q) {
           sendButMessage(from, `MODE ANTIVIRTEX`, `Please choose one`, [
             {
-              buttonId: `${prefix}antivirtex on`,
+              buttonId: `antivirtex on`,
               buttonText: {
                 displayText: `on`,
               },
               type: 1,
             },
             {
-              buttonId: `${prefix}antivirtex off`,
+              buttonId: `antivirtex off`,
               buttonText: {
                 displayText: `off`,
               },
@@ -3039,14 +3039,14 @@ break
         } else if (!q) {
           sendButMessage(from, `MODE KICKAREA`, `Please choose one`, [
             {
-              buttonId: `${prefix}kickarea on`,
+              buttonId: `kickarea on`,
               buttonText: {
                 displayText: `on`,
               },
               type: 1,
             },
             {
-              buttonId: `${prefix}kickarea off`,
+              buttonId: `kickarea off`,
               buttonText: {
                 displayText: `off`,
               },
@@ -3232,7 +3232,7 @@ case 'linkwa':
           mek.message.extendedTextMessage === undefined ||
           mek.message.extendedTextMessage === null
         )
-          return reply("Reply members");
+          return reply("Reply to the  member you wanted to promote");
         mentionede = mek.message.extendedTextMessage.contextInfo.participant;
         xeon.groupDemoteAdmin(from, [mentionede]);
         teks = `Members @${mentionede.split("@")[0]} succes demote`;
@@ -3623,7 +3623,7 @@ case 'ghea':
                     ggg = `Intake`
    sendButVideo(from, ggg, `Click Next To Continue`, get_result, [                      
           {
-            buttonId: `${prefix+command}`,
+            buttonId: `ghea`,
             buttonText: {
               displayText: `Next シ︎`,
             },
@@ -3867,7 +3867,7 @@ case "intake": // by xeon
             type: 1,
           },
           {
-            buttonId: `${prefix}intake2`,
+            buttonId: `intake2`,
             buttonText: {
               displayText: `Next intake >`,
             },
@@ -4175,7 +4175,7 @@ sendButMessage(from, tiyo, `𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
               type: 1,
                },
           {
-            buttonId: `${prefix}writeleft ${dpuhy}`,
+            buttonId: `writeleft ${dpuhy}`,
             buttonText: {
               displayText: `LEFT`,
             },
@@ -5118,7 +5118,7 @@ buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}
   case 'buttons5':
               const mathdare = dare[Math.floor(Math.random() * (dare.length))]
               result = `${mathdare}`
-              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1}]
+              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`buttons5`,buttonText:{displayText:'Dare'},type:1}]
               buttonsMessage = { contentText: `${result}`, footerText: 'Play again?', buttons: buttons, headerType: 1 }
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
               xeon.relayWAMessage(prep)
@@ -5135,7 +5135,7 @@ buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}
           case 'truth':
           case 'dare':
               result =`*Truth Or Dare*\nPlayers are given a choice between answering questions honestly, or taking on the challenge given`
-              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1}]
+              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`buttons5`,buttonText:{displayText:'Dare'},type:1}]
               buttonsMessage = { contentText: `${result}`, footerText: 'Truth or Dare?', buttons: buttons, headerType: 1 }
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{contextInfo: { mentionedJid: [sender]},quoted:ftex})
               xeon.relayWAMessage(prep)
@@ -5191,7 +5191,7 @@ case 'waifu':
               let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
-		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'🦄OWNER'},type:1}]
+		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`owner`,buttonText:{displayText:'🦄OWNER'},type:1}]
               imageMsg = ( await xeon.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Dont forget to donate lol ☕', imageMessage: imageMsg,
               contentText:`Click Next to go to the next picture`,buttons,headerType:4}
