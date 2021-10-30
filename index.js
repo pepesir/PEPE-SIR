@@ -1474,7 +1474,7 @@ ${readmore}
 > ⬡ ${prefix}transformer text|text
 > ⬡ ${prefix}write text
 > ⬡ ${prefix}waifu
-> ⬡ ${prefix}phlogo text|*text
+> ⬡ ${prefix}phlogo *text|text
 > ⬡ ${prefix}tfire text
 > ⬡ ${prefix}phcomment text|text
 > ⬡ ${prefix}wolf text
@@ -2783,14 +2783,14 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         } else if (!q) {
           sendButMessage(from, `MODE ANTILINK`, `Please choose one`, [
             {
-              buttonId: `${prefix}antilink on`,
+              buttonId: `antilink on`,
               buttonText: {
                 displayText: `on`,
               },
               type: 1,
             },
             {
-              buttonId: `${prefix}antilink off`,
+              buttonId: `antilink off`,
               buttonText: {
                 displayText: `off`,
               },
@@ -2824,14 +2824,14 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
             `Please choose one`,
             [
               {
-                buttonId: `${prefix}antihidetag on`,
+                buttonId: `antihidetag on`,
                 buttonText: {
                   displayText: `on`,
                 },
                 type: 1,
               },
               {
-                buttonId: `${prefix}antihidetag off`,
+                buttonId: `antihidetag off`,
                 buttonText: {
                   displayText: `off`,
                 },
@@ -2860,14 +2860,14 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
             `Please choose one`,
             [
               {
-                buttonId: `${prefix}antiviewonce on`,
+                buttonId: `antiviewonce on`,
                 buttonText: {
                   displayText: `on`,
                 },
                 type: 1,
               },
               {
-                buttonId: `${prefix}antiviewonce off`,
+                buttonId: `antiviewonce off`,
                 buttonText: {
                   displayText: `off`,
                 },
@@ -3553,12 +3553,12 @@ case 'harta':
   reply(mess.wait)
   sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/chartatahta?text=${args[0]}&apikey=${HunterApi}`, `Here 🗿`)
   break
-case 'bocil':
+case 'leaky':
                     get_result = await getBuffer(`https://dapuhy-api.herokuapp.com/api/asupan/asupanbocil?apikey=${dapapi}`)
                     kodo = `Intake`
    sendButVideo(from, kodo, `Click Next To Continue`, get_result, [                      
           {
-            buttonId: `${prefix+command}`,
+            buttonId: `leaky`,
             buttonText: {
               displayText: `Next シ︎`,
             },
@@ -3571,7 +3571,7 @@ case '+91':
                     pll = `Intake`
    sendButVideo(from, pll, `Click Next To Continue`, get_result, [                      
           {
-            buttonId: `${prefix+command}`,
+            buttonId: `+91`,
             buttonText: {
               displayText: `Next シ︎`,
             },
@@ -3584,7 +3584,7 @@ case 'santuy':
                     hhh = `Intake`
    sendButVideo(from, hhh, `Click Next To Continue`, get_result, [                      
           {
-            buttonId: `${prefix+command}`,
+            buttonId: `santuy`,
             buttonText: {
               displayText: `Next シ︎`,
             },
@@ -3597,7 +3597,7 @@ case 'ukhti':
                     kntl = `Intake`
    sendButVideo(from, kntl, `Click Next To Continue`, get_result, [                      
           {
-            buttonId: `${prefix+command}`,
+            buttonId: `ukhti`,
             buttonText: {
               displayText: `Next シ︎`,
             },
@@ -3610,7 +3610,7 @@ case 'rikagusriani':
                     yyy = `Intake`
    sendButVideo(from, yyy, `Click Next To Continue`, get_result, [                      
           {
-            buttonId: `${prefix+command}`,
+            buttonId: `rikagusriani`,
             buttonText: {
               displayText: `Next シ︎`,
             },
@@ -3765,7 +3765,7 @@ break
 			 res = await xeon.prepareMessageFromContent(from,{
 "templateMessage": {
 						"hydratedTemplate": {
-							"hydratedContentText": `Hi ${pushname} 👋,\n\n${jam} - ${week} ${weton} - ${date}`,
+							"hydratedContentText": `Hi ${pushname} 👋`,
 							"hydratedFooterText": `${fakeyoi}`,
 							"hydratedButtons": [
 								{
@@ -3835,14 +3835,14 @@ break
         if (!mek.key.fromMe) return;
         sendButMessage(from, `MODE SELF/PUBLIC`, `Please choose one`, [
           {
-            buttonId: `${prefix}self`,
+            buttonId: `self`,
             buttonText: {
               displayText: `SELF MODE`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}public`,
+            buttonId: `public`,
             buttonText: {
               displayText: `PUBLIC MODE`,
             },
@@ -3853,14 +3853,14 @@ break
 case "intake": // by xeon
         sendButMessage(from, `Hi ${pushname}`, `Please select your intake✨`, [
           {
-            buttonId: `${prefix}+91`,
+            buttonId: `+91`,
             buttonText: {
               displayText: `㋛  +91 intake`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}ghea`,
+            buttonId: `ghea`,
             buttonText: {
               displayText: `🔖 Ghea intake`,
             },
@@ -3878,21 +3878,21 @@ case "intake": // by xeon
 case "intake2": // by xeon
         sendButMessage(from, `Hi ${pushname}`, `Please select the intake V.2✨`, [
           {
-            buttonId: `${prefix}santuy`,
+            buttonId: `santuy`,
             buttonText: {
               displayText: `🔖 Intake of Santuy`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}leaky`,
+            buttonId: `leaky`,
             buttonText: {
               displayText: `🔖 Leaky intake`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}intake3`,
+            buttonId: `intake3`,
             buttonText: {
               displayText: `Next Intake >`,
             },
@@ -3903,21 +3903,21 @@ case "intake2": // by xeon
 case "intake3": // by xeon
         sendButMessage(from, `Hi ${pushname}`, `Please select the intake V.3✨`, [
           {
-            buttonId: `${prefix}rikagusriani`,
+            buttonId: `rikagusriani`,
             buttonText: {
               displayText: `🔖 Rikagusriani intake`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}ukhti`,
+            buttonId: `ukhti`,
             buttonText: {
               displayText: `🔖 Ukhti intake`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}mygithub`,
+            buttonId: `mygithub`,
             buttonText: {
               displayText: `Follow my Github 😄`,
             },
@@ -3929,21 +3929,21 @@ case "intake3": // by xeon
         if (!mek.key.fromMe) return;
         sendButMessage(from, `GROUP SETTING`, `Please choose one`, [
           {
-            buttonId: `${prefix}opengc`,
+            buttonId: `opengc`,
             buttonText: {
               displayText: `OPEN`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}closegc`,
+            buttonId: `closegc`,
             buttonText: {
               displayText: `CLOSE`,
             },
             type: 1,
           },
           {
-            buttonId: `${prefix}revoke`,
+            buttonId: `revoke`,
             buttonText: {
               displayText: `REVOKE INVITE`,
             },
@@ -3971,14 +3971,14 @@ case "intake3": // by xeon
           tamnel,
           [
             {
-              buttonId: `${prefix}tiktokdl ${args[0]}|video`,
+              buttonId: `tiktokdl ${args[0]}|video`,
               buttonText: {
                 displayText: `VIDEO`,
               },
               type: 1,
             },
             {
-              buttonId: `${prefix}tiktokdl ${args[0]}|audio`,
+              buttonId: `tiktokdl ${args[0]}|audio`,
               buttonText: {
                 displayText: `AUDIO`,
               },
