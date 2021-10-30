@@ -1447,7 +1447,6 @@ ${readmore}
 > ⬡ ${prefix}tod
 > ⬡ ${prefix}tospam amount
 > ⬡ ${prefix}antihidetag on|off
-> ⬡ ${prefix}antiviewonce on|off
 > ⬡ ${prefix}antivirtex on|off
 > ⬡ ${prefix}autojoin on|off
 > ⬡ ${prefix}kickarea
@@ -2085,8 +2084,6 @@ menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
 ㋛${prefix}tospam amount
 
 ㋛${prefix}antihidetag
-
-㋛${prefix}antiviewonce
 
 ㋛${prefix}autojoin
 
