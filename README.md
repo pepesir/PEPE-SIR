@@ -44,7 +44,7 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 
 
 ``` 
-git clone https://github.com/DGXeon/DogeBot.git
+git clone https://github.com/pepesir/PEPE-SIR.git
 ```
 ```
 cd PEPE-SIR
