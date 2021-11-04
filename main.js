@@ -64,7 +64,7 @@ const sleep = async (ms) => {
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
   client.version = [2, 2143, 3];
-  client.browserDescription = ["Subscribe Xeon", "Chrome", "3.0"];
+  client.browserDescription = ["Subscribe Pepe Sir", "Chrome", "3.0"];
   console.log(banner.string);
   client.on("qr", () => {
     console.log(
@@ -72,7 +72,7 @@ const starts = async (client = new WAConnection()) => {
       color("!", "blue"),
       color("]", "white"),
       color(" flashy scan the qr code"),
-      client.sendMessage(`916909137213@s.whatsapp.net`, `「 *NOTIFICATION!* 」\n\n _Bot Connected Successfully!_`, MessageType.extendedText)
+      client.sendMessage(`917736622139@s.whatsapp.net`, `「 *NOTIFICATION!* 」\n\n _Bot Connected Successfully!_`, MessageType.extendedText)
           
     );
   });
