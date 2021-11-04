@@ -131,6 +131,30 @@ If you need help
 you can contact us 
 ```
 
+  <p align="center">
+  <a href="https://github.com/pepesir/PEPE-SIR">
+    
+<a href="https:https://github.com/pepesir?tab=followers">
+<img src="https://img.shields.io/github/repo-size/pepesir/PEPE-SIR?color=green&label=Repo%20total%20size&style=plastic">
+<p align="center">
+<a href="https://github.com/pepesir/followers"
+<img title="Followers" src="https://img.shields.io/github/followers/pepesir?color=blue&style=flat-square"></a>
+<a href="https://github.com/pepesir/PEPE-SIR/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/pepesir/PEPE-SIR?color=blue&style=flat-square"></a>
+<a href="https://github.com/pepesir/PEPE-SIR/network/members"><img title="Forks" src="https://img.shields.io/github/forks/pepesir/PEPE-SIR?color=blue&style=flat-square"></a>
+<a href="https://github.com/pepesir/PEPE-SIR/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/pepesir/PEPE-SIR?label=Watchers&color=blue&style=flat-square"></a>
+</p>
+
+<p align="center">
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=pepesir&show_icons=true&theme=dark&locale=en" alt="pepesir" /></p>
+    
+  <div align="center">
+       
+  ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=pepesir&bg_color=000000&color=4fff67&line=4fff67&point=ffffff&area=true&hide_border=true)
+  </div>
+ 
+
+  [![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://chat.whatsapp.com/Ima3CdRZ81NCvGshtcQhK3)
+
 # Thanks To
 * [`Pepe`](https://github.com/pepesir)
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
