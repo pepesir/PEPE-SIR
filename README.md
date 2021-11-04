@@ -12,7 +12,7 @@
   <a href="https://github.com/pepesir"><img title="Author" src="https://img.shields.io/badge/Author-Pepe-blue.svg?style=for-the-badge&logo=github" /></a>
 </p>
 <p align="center">
-<a href="#"><img title="Xeon" src="https://img.shields.io/static/v1?label=WHATSAPP&message=P3p3 sir-Bot&color=blue"></a>
+<a href="#"><img title="Xeon" src="https://img.shields.io/static/v1?label=WHATSAPP&message=P3P3 SIR-Bot&color=blue"></a>
 </p>
 
 ## Deploy
