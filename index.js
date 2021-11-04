@@ -1582,9 +1582,13 @@ case 'credit':
    dtod3 = ''
    dtod4 ='0'
    var yez = `
-   [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑠 𝐵𝑦 ] :
-   
- 𝐏𝐄𝐏𝐄 𝐒𝐈𝐑 : wa.me/${dtod.split('@')[0]}
+╭───➤ 𝐀𝐃𝐌𝐈𝐍
+│
+│
+│✨ wa.me/${dtod.split('@')[0]}
+│
+╰───────────────
+ © ᴄᴏᴅᴇᴅ ʙʏ ᴘᴇᴘᴇ sɪʀ
  `
      credit = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${yez}`, "footerText": "hehe", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
             xeon.relayWAMessage(credit)
