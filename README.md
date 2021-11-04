@@ -42,30 +42,65 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 
 # Installation
 ## Clone Repo & Installation dependencies
-```bash
- git clone https://github.com/pepesir/PEPE-SIR.git ```
- cd PEPE-SIR 
- npm start
+
+
+``` 
+git clone https://github.com/DGXeon/DogeBot.git
 ```
+```
+cd PEPE-SIR
+```
+```
+npm start
+```
+
 ## For Termux
-```bash
-🦄 apt update
-🦄 apt upgrade
-🦄 pkg update && pkg upgrade 
-🦄 pkg install hot
-🦄 pkg install bash
-🦄 pkg install libwebp
-🦄 pkg install git -y
-🦄 pkg install nodejs -y 
-🦄 pkg install ffmpeg -y 
-🦄 pkg install wget
-🦄 pkg install imagemagick -y
-🦄 git clone https://github.com/pepesir/PEPE-SIR
-🦄 cd PEPE-SIR
-🦄 npm install
-🦄 npm start
-🦄 scan qr code within 15seconds
 ```
+apt update
+```
+```
+apt upgrade
+```
+```
+pkg update && pkg upgrade 
+```
+```
+pkg install hot
+```
+```
+pkg install bash
+```
+```
+pkg install libwebp
+```
+```
+pkg install git -y
+```
+```
+pkg install nodejs -y 
+```
+```
+pkg install ffmpeg -y 
+```
+```
+pkg install wget
+```
+```
+pkg install imagemagick -y
+```
+```
+git clone https://github.com/pepesir/PEPE-SIR
+```
+```
+cd PEPE-SIR
+```
+```
+npm install
+```
+```
+npm start
+```
+scan qr code within 15seconds
 
 ## Connect With Me
 My Personal Chat👇
