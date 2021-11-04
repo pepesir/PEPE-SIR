@@ -43,9 +43,9 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 # Installation
 ## Clone Repo & Installation dependencies
 ```bash
-🦄 git clone https://github.com/pepesir/PEPE-SIR.git
-🦄 cd PEPE-SIR
-🦄 npm start
+ git clone https://github.com/pepesir/PEPE-SIR.git ```
+ cd PEPE-SIR 
+ npm start
 ```
 ## For Termux
 ```bash
