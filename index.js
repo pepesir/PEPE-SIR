@@ -3533,7 +3533,7 @@ case 'hacked':
                 await sleep(1000)
                 xeon.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
 case 'mygithub':
-  reply('https://github.com/pepesir')
+  reply('SCRIPT SOON MAKING PUBLIC')
 					break;
    case 'ss':
       reply(mess.wait)
