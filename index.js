@@ -1,6 +1,6 @@
-// Script by Pepe 
+// Script by Pepe
 // 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁
-// ©Xeon Bot Incorporated
+// ©Pepe Bot Incorporated
 const {
   WAConnection: _WAConnection,
   MessageType,
@@ -926,7 +926,7 @@ const fakeitem = (teks) => {
         	fromMe:false,
         participant:`0@s.whatsapp.net`, ...(from ? {
 remoteJid :"6289523258649-1604595598@g.us" }: {})
-                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 😎`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
 // Katalog
 const reply = (teks) => {
              res = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 111119999, "message": teks, "footerText": "*Xeon*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:ftrol})
@@ -941,7 +941,7 @@ xeon.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `Whatsapp-BOT\n𝐃𝐨𝐠𝐞 𝐁𝐨𝐭. (@nnda.krnwn_) •Instagram photos and Videos`,
+                "title": `Whatsapp-BOT\n𝙿𝙴𝙿𝙴 𝚂𝙸𝚁😎. (@nnda.krnwn_) •Instagram photos and Videos`,
                 "body": "",
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
@@ -1302,18 +1302,18 @@ const serialUser = createSerial(18)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
 	         const anuu = `「 *USER REGISTRATION* 」
-*Thank you for registering in the 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭 Database*
+*Thank you for registering in the 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁😎 Database*
 
 *☂︎ Name :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
 *☂︎ Serial:* ${serialUser}
 *☂ ︎Total:* ${_registered.length} User
 
-*「 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭 」*`
+*「 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `</️MENU`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-              buttonsMessage = {footerText:'Xeon', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'ᴘᴇᴘᴇ', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
               xeon.relayWAMessage(prep)
@@ -1321,7 +1321,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			xeon.updatePresence(from, Presence.composing)
-			reply(`*Thank you for being registered 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭*`)
+			reply(`*Thank you for being registered 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁*`)
 		}, 2000)
         break
       
@@ -1340,23 +1340,23 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        txtt =`Hi ${pushname} 👋\n\nIF MENU DOESNT APPEAR ON CLICKING MENU BUTTON, TYPE #allmenu`
 
                buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'MENU🐶'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREATOR🐶'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'LIST MENU🐶'},type:1}]
+               buttonText:{displayText: 'MENU'},type:1},
+               {buttonId:`owner`,buttonText:{displayText:'CREATOR'},type:1},
+               {buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1}]
 
 
                imageMsg = (await xeon.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `シ︎ 𝙎𝙩𝙖𝙩𝙪𝙨 シ︎
+               footerText: `❑ 𝙎𝙩𝙖𝙩𝙪𝙨 ︎❑
                
- 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
- 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
- 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
- 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
- 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
- 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}`, imageMessage: imageMsg,
+ ▢ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
+ ▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
+ ▢ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
+ ▢ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
+ ▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
+ ▢ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -1388,12 +1388,12 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        menu = `
 🐶 Hi @${sender.split("@")[0]}
 
-シ︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
-シ︎ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
-シ︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
-シ︎ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
-シ︎ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
-シ︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
+▢︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
+▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
+▢︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
+▢︎ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
+︎▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
+▢︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
 ${readmore}
  
  ⬣ 𝙊𝙒𝙉𝙀𝙍 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
@@ -1570,10 +1570,6 @@ ${readmore}
 > ⬡ ${prefix}megumin
 > ⬡ ${prefix}neko
 > ⬡ ${prefix}trapnime
-
-
-𝗡𝗼𝘁𝗲 : Horny = Bonks💥
-Just Learn to Make Bots 🐶
  
 𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
 `
@@ -1581,7 +1577,7 @@ sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, 
 
 break
 case 'credit':
-   dtod = '916909137213'
+   dtod = '917736622139'
    dtod1 = '916909137213'
    dtod2 = '919774340154'
    dtod3 = ''
@@ -1589,9 +1585,7 @@ case 'credit':
    var yez = `
    [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑠 𝐵𝑦 ] :
    
- 🌿 : wa.me/${dtod1.split("@")[0]}
- 🌿 : wa.me/${dtod.split('@')[0]}
- 🌿 : wa.me/${dtod2.split('@')[0]}
+ ■ : wa.me/${dtod.split('@')[0]}
  `
      credit = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${yez}`, "footerText": "hehe", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
             xeon.relayWAMessage(credit)
@@ -1634,7 +1628,7 @@ case 'bugreport':
               if (args.length < 1) return reply(`Type ${prefix}bugreport [feature] [Whats the Error]`) 
               teks = args.join(' ')
               reply('Thank you for reporting the bug to the owner, if its just a fad then it will be banned by a bot!')
-              xeon.sendMessage('916909137213@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              xeon.sendMessage('917736622139@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
               
               break
 case 'restart':
@@ -1673,7 +1667,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 case 'auu': // by xeon
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
        reply('No Sis')
-        sendButMessage(from, `Hi ${pushname} 🐶`, `What do you want to answer??`, [
+        sendButMessage(from, `Hi ${pushname} `, `What do you want to answer??`, [
           {
             buttonId: `oklah`,
             buttonText: {
@@ -1731,7 +1725,7 @@ reply(`${mek.quoted.caption}`)
 break
 case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-  reply('https://www.instagram.com/josephxeon13/')
+  reply('https://www.instagram.com/_roshan_p_r')
 break
    
 case 'owner':
@@ -1742,7 +1736,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                await sleep(1000)
                haibg =`Hi ${pushname}\nThats my owner, What do you want to know about??`
                buttons = [{buttonId: `mygithub`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
-               buttonsMessage = { contentText: `${haibg}`, footerText: `Created By ${fakeyoi} 🌿`, buttons: buttons, headerType: 1 }
+               buttonsMessage = { contentText: `${haibg}`, footerText: `Created By ${fakeyoi} 😌💝`, buttons: buttons, headerType: 1 }
                prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
                xeon.relayWAMessage(prep)
                break     
@@ -1819,7 +1813,7 @@ case 'buglink':
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
                 "thumbnail": fs.readFileSync(`./xeon.jpg`),
-                "sourceUrl": "https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A"}}})
+                "sourceUrl": "https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA"}}})
                 break
         case 'bugbutton':
         if (!isOwner && !mek.key.fromMe) return reply('Only owner can use this feature')
@@ -1954,7 +1948,7 @@ let ini_list = []
 for (let i of nomorowner1) {
 const vname = xeon.contacts[i] != undefined ? xeon.contacts[i].vname || xeon.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'Xeon',
+"displayName": 'Pepe',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xeon.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -1968,11 +1962,11 @@ case 'command':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
  listMsg = {
  buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
- footerText: '𝐃𝐨𝐠𝐞 𝐁𝐨𝐭',
+ footerText: '𝙿𝙴𝙿𝙴 𝚂𝙸𝚁',
  description: `Hi @${sender.split('@')[0]}, Please select the menu here`,
  sections: [
                      {
-                      "title": `Xeon`,
+                      "title": `ᴘᴇᴘᴇ`,
  rows: [
                           {
                               "title": "Script",
