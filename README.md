@@ -16,7 +16,7 @@
 </p>
 
 ## Deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/pepesir/DogeBot/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/pepesir/PEPE-SIR/)
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
@@ -33,18 +33,18 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 
 ## `CHANGE SESSION`
 
-[`Click Here`](https://github.com/pepesir/DogeBot/blob/master/session.json#L1)
+[`Click Here`](https://github.com/pepesir/PEPE-SIR/blob/master/session.json#L1)
 
 ## `SETTING`
 
-- CHANGE OWNER NUMBER [Here](https://github.com/pepesir/DogeBot/blob/master/index.js#L136)
-- CHANGE OWNER NAME [Here](https://github.com/pepesir/DogeBot/blob/master/index.js#L138)
+- CHANGE OWNER NUMBER [Here](https://github.com/pepesir/PEPE-SIR/blob/master/index.js#L136)
+- CHANGE OWNER NAME [Here](https://github.com/pepesir/PEPE-SIR/blob/master/index.js#L138)
 
 # Installation
 ## Clone Repo & Installation dependencies
 ```bash
-🦄 git clone https://github.com/pepesir/DogeBot.git
-🦄 cd DogeBot
+🦄 git clone https://github.com/pepesir/PEPE-SIR.git
+🦄 cd PEPE-SIR
 🦄 npm start
 ```
 ## For Termux
@@ -60,8 +60,8 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 🦄 pkg install ffmpeg -y 
 🦄 pkg install wget
 🦄 pkg install imagemagick -y
-🦄 git clone https://github.com/pepesir/DogeBot
-🦄 cd DogeBot
+🦄 git clone https://github.com/pepesir/PEPE-SIR
+🦄 cd PEPE-SIR
 🦄 npm install
 🦄 npm start
 🦄 scan qr code within 15seconds
@@ -81,5 +81,6 @@ My Whatsapp Group👇
 * [`My Youtube Channel`](https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA)
 
 # Thanks To
+* [`Pepe`](https://github.com/pepesir
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 * [`Xeon`](https://github.com/DGXeon)
