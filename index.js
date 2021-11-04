@@ -1,5 +1,5 @@
-// Script by Xeon 
-// 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭
+// Script by Pepe 
+// 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁
 // ©Xeon Bot Incorporated
 const {
   WAConnection: _WAConnection,
@@ -372,8 +372,8 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nBefore Using the Bot Verify First `
-       const daftar2 = '```Click the button below to verify bro or type #verify\n𝐃𝐨𝐠𝐞 𝐁𝐨𝐭```'
+const daftar1 = `❑ Hi ${pushname} 🐦 ${ucapanWaktu} \n\n❑ Before Using the Bot Verify First 🙂`
+       const daftar2 = '```Click the button below to verify bro or type #verify\n𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 😎```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -790,7 +790,7 @@ if (!itsMe && !isOwner)return
             description: "Xeon",
             currencyCode: "USD",
             priceAmount1000: "2000",
-            retailerId: "𝐃𝐨𝐠𝐞 𝐁𝐨𝐭",
+            retailerId: "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁",
             productImageCount: 1,
           },
           businessOwnerJid: `0@s.whatsapp.net`,
@@ -916,7 +916,7 @@ xeon.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
       xeon.groupAdd(from, orangnya);
     };
         const grupinv = (teks) => {
-        	grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `Xeon Bot Inc.`, "footerText": "*_𝐃𝐨𝐠𝐞 𝐁𝐨𝐭_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
+        	grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `Xeon Bot Inc.`, "footerText": "*_𝙿𝙴𝙿𝙴 𝚂𝙸𝚁_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
             xeon.relayWAMessage(grup)
         }
 const fakeitem = (teks) => {
