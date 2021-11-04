@@ -81,6 +81,6 @@ My Whatsapp Group👇
 * [`My Youtube Channel`](https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA)
 
 # Thanks To
-* [`Pepe`](https://github.com/pepesir
+* [`Pepe`](https://github.com/pepesir)
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 * [`Xeon`](https://github.com/DGXeon)
