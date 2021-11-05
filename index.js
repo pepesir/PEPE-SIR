@@ -45,6 +45,7 @@ const crypto = require('crypto')
 const yts = require("yt-search");
 const ms = require("parse-ms");
 const os = require('os');
+const  vien = JSON.parse(fs.readFileSync('./database/vien.json'))
 const toMs = require("ms");
 const { error } = require("qrcode-terminal");
 const {
