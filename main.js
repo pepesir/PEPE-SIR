@@ -83,7 +83,7 @@ const starts = async (client = new WAConnection()) => {
   });
   client.on("open", () => {
     success("2", "Successfully connected to wa, Subscribe Pepe sir");
-console.log(color(figlet.textSync(`${spc1}            Doge Bot`, {
+console.log(color(figlet.textSync(`${spc1}            PEPE SIR`, {
 font: 'Standard',
 horizontalLayout: 'default',
 vertivalLayout: 'default',
