@@ -25,6 +25,7 @@ const { Toxic } = require('./lib/Toxic.js')
 const hx = require("hxz-api");
 const qrcode = require("qrcode-terminal");
 const moment = require("moment-timezone");
+const  vien = JSON.parse(fs.readFileSync('./database/vien.json'))
 const speed = require("performance-now");
 const request = require("request");
 const { spawn, exec, execSync } = require("child_process");
@@ -45,7 +46,6 @@ const crypto = require('crypto')
 const yts = require("yt-search");
 const ms = require("parse-ms");
 const os = require('os');
-const  vien = JSON.parse(fs.readFileSync('./database/vien.json'))
 const toMs = require("ms");
 const { error } = require("qrcode-terminal");
 const {
@@ -4655,7 +4655,7 @@ case 'nsfw':
 					xeon.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./xeon.jpg')})
 					break
 			case 'battlefield': 
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} pepe|Doge`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} pepe|sir`)
 					makell = args.join(" ")
 					ll1 = makell.split("|")[0];
 					ll2 = makell.split("|")[1];
@@ -6275,7 +6275,7 @@ xeon.sendMessage(from, stdout, text, term)
     if (isGroup && budy != undefined) {
     } else {
       console.log(
-        color("[Doge Bot]", "red"),
+        color("[Pepe Bot]", "red"),
         "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁",
         color(sender.split("@")[0])
       );
