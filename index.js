@@ -2105,7 +2105,7 @@ sendButMessage(from, menu, `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`, [
 break
 case 'groupmenu':
 menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
-❑${prefix}grup [3 Button]
+❑${prefix}group [3 Button]
 
 ❑${prefix}promote <reply chat member>
 
@@ -2243,6 +2243,8 @@ break
 case 'othermenu':
 menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ❑${prefix}ping
+
+❑${prefix}alive
 
 ❑${prefix}inspect
 
@@ -2751,6 +2753,40 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                    anu = await getBuffer(`${ApiZeks}/api/splaybutton?text=${F}&apikey=${zeksApikey}`)
                    xeon.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    break
+      case 'addvn':
+      case 'addbgm':
+					if (!isQuotedAudio) return reply('*Reply to Audio*')
+					nm = body.slice(7)
+					if (!nm) return reply('*What is The bgm name?*')
+					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
+					delb = await xeon.downloadMediaMessage(boij)
+					vien.push(`${nm}`)
+					fs.writeFileSync(`./sticker/${nm}.mp3`, delb)
+					fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
+					xeon.sendMessage(from, `*Bgm Added*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 333, status: 200, thumbnail: fs.readFileSync('./xeon.jpg'), surface: 200, message: `${nm}`, orderTitle: 'pepe', sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
+					break
+	 case 'delvn':
+					try {
+					 nmm = body.slice(7)
+					 wanu = vien.indexOf(nmm)
+					 vien.splice(wanu, 1)
+					 fs.unlinkSync(`./sticker/${nmm}.mp3`)
+					xeon.sendMessage(from, `*Bgm Deleted*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 59, status: 200, thumbnail: fs.readFileSync('./xeon.jpg'), surface: 200, message: '𝕻𝖊𝖕𝖊', orderTitle: '𝕾𝖊𝖗', sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
+					} catch (err){
+						console.log(err)
+						reply(mess.error.api)
+					}
+					break
+				case 'vnlist':
+				case 'listbgm':
+					case 'listvn':
+					teks = '*Lɪsᴛ Bɢᴍ :*\n'
+					for (let awokwkwk of vien) {
+						teks += `- ${awokwkwk}\n`
+					}
+					teks += `\n*Tᴏᴛᴀʟ : ${vien.length}*\n\n_▢_`
+					xeon.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}𝑷𝒆𝒑𝒆 𝑺𝒆𝒓${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://i.ibb.co/vkkcm0L/034c588fd8d5.jpg'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/c/62852407507130'}`}},quoted: ftext})
+					break
        case 't3d':
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe*`)
                    F = body.slice(5)
@@ -3976,9 +4012,9 @@ case "intake3": // by pepe
           },
         ]);
         break;
-      case "grup":
+      case "group":
         if (!mek.key.fromMe) return;
-        sendButMessage(from, `GROUP SETTING`, `Please choose one`, [
+        sendButMessage(from, `GROUP SETTING`, `Please choose one/nᴘᴇᴘᴇ sɪʀ`, [
           {
             buttonId: `opengc`,
             buttonText: {
