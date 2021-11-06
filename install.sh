@@ -13,3 +13,4 @@ wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-oc
 npm install
 
 echo "DONE INSTALLING ALL PACKAGE REQUIRE, TINGGAL RUN npm start"
+
