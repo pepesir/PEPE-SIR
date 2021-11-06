@@ -414,7 +414,7 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 cmhit.push(command)
     //MESS
     mess = {
-      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 シ︎",
+      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 ︎",
       success: "Success シ︎",
       wrongFormat: "Wrong format, try again in the menu",
       error: {
@@ -1337,7 +1337,7 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hi ${pushname} 👋\n\nIF MENU DOESNT APPEAR ON CLICKING MENU BUTTON, TYPE #allmenu`
+       txtt =` ▢ 𝐇𝐢 ${pushname} \n ▢ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} \n▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length} \n▢ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length} \n▢ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_ \n▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())} \n▢ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}`, imageMessage: imageMsg,\nIF`
 
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU'},type:1},
@@ -1349,14 +1349,9 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `❑ 𝙎𝙩𝙖𝙩𝙪𝙨 ︎❑
+               footerText: ` MENU DOESNT APPEAR ON CLICKING MENU BUTTON, TYPE #allmenu
                
- ▢ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
- ▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
- ▢ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
- ▢ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
- ▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
- ▢ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}`, imageMessage: imageMsg,
+𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 `
                buttons: buttons,
                headerType: 4
 }
