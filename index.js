@@ -1,5 +1,5 @@
 // Script by Pepe
-// 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁
+// 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 | 𝙳𝙾𝙽'𝚃 𝙲𝙷𝙰𝙽𝙶𝙴 𝙲𝚁𝙴𝙳𝙸𝚃𝚂🙂
 // ©Pepe Bot Incorporated
 const {
   WAConnection: _WAConnection,
