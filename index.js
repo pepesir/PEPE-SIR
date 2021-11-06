@@ -1337,7 +1337,7 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hi ${pushname} 👋\n\nIF MENU DOESNT APPEAR ON CLICKING MENU BUTTON, TYPE #allmenu`
+       txtt =` ▢ 𝐇𝐢 ${pushname} \n ▢ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} \n ▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}\n ▢ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length} \n ▢ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_ \n ▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())} \n ▢ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}`
 
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU'},type:1},
@@ -1349,14 +1349,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `❑ 𝙎𝙩𝙖𝙩𝙪𝙨 ︎❑
-               
- ▢ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
- ▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
- ▢ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
- ▢ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
- ▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
- ▢ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}`, imageMessage: imageMsg,
+               footerText: `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -1386,193 +1379,253 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `
-▢ 𝐇𝐢 @${sender.split("@")[0]}
-▢︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
-▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
-▢︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
-▢︎ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
-︎▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
-▢︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
+╭────────────────╮
+│▢ 𝐇𝐢 @${sender.split("@")[0]}
+│▢︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
+│▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
+│▢︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
+│▢︎ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_
+│︎▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())}
+│▢︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
+╰────────────────╯
 ${readmore}
  
- ⬣ 𝙊𝙒𝙉𝙀𝙍 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}off
-> ⬡ ${prefix}isbaileys
-> ⬡ ${prefix}banchat
-> ⬡ ${prefix}unbanchat
-> ⬡ ${prefix}listbc
-> ⬡ ${prefix}setcmd
-> ⬡ ${prefix}delcmd
-> ⬡ ${prefix}listcmd
-> ⬡ ${prefix}restart
-> ⬡ ${prefix}antidelete on|off
-> ⬡ ${prefix}autotype on|off
-> ⬡ ${prefix}autoread gc in / gc off
-> ⬡ ${prefix}autovn on|off
-> ⬡ ${prefix}anticall on|off
-> ⬡ ${prefix}getcaption
-> ⬡ ${prefix}bugcatalog
-> ⬡ ${prefix}buggc id grup
-> ⬡ ${prefix}okvirtex
-> ⬡ ${prefix}on
-> ⬡ ${prefix}status
-> ⬡ ${prefix}setthumb
-> ⬡ ${prefix}settarget
-> ⬡ ${prefix}setfakeimg
-> ⬡ ${prefix}setreply
-> ⬡ ${prefix}hacked name
-> ⬡ ${prefix}setprefix
-> ⬡ ${prefix}mode /public-self/
-> ⬡ ${prefix}term <code>
-> ⬡ ${prefix}eval <code>
-> ⬡ ${prefix}colongsw reply
+  ❑ ᴏᴡɴᴇʀ ғᴇᴀᴛᴜʀᴇs
+╭──────────────── 
+│ ⬡ ${prefix}off
+│ ⬡ ${prefix}isbaileys
+│ ⬡ ${prefix}banchat
+│ ⬡ ${prefix}unbanchat
+│ ⬡ ${prefix}listbc
+│ ⬡ ${prefix}setcmd
+│ ⬡ ${prefix}delcmd
+│ ⬡ ${prefix}listcmd
+│ ⬡ ${prefix}restart
+│ ⬡ ${prefix}antidelete on|off
+│ ⬡ ${prefix}autotype on|off
+│ ⬡ ${prefix}autoread gc in / gc off
+│ ⬡ ${prefix}autovn on|off
+│ ⬡ ${prefix}anticall on|off
+│ ⬡ ${prefix}getcaption
+│ ⬡ ${prefix}bugcatalog
+│ ⬡ ${prefix}buggc id grup
+│ ⬡ ${prefix}okvirtex
+│ ⬡ ${prefix}on
+│ ⬡ ${prefix}status
+│ ⬡ ${prefix}setthumb
+│ ⬡ ${prefix}settarget
+│ ⬡ ${prefix}setfakeimg
+│ ⬡ ${prefix}setreply
+│ ⬡ ${prefix}hacked name
+│ ⬡ ${prefix}setprefix
+│ ⬡ ${prefix}mode /public-self/
+│ ⬡ ${prefix}term <code│
+│ ⬡ ${prefix}eval <code>
+│ ⬡ ${prefix}colongsw reply
+╰──────────────── 
+
+ ❑ ɢʀᴏᴜᴘ ғᴇᴀᴛᴜʀᴇs
+╭──────────────── 
+│ ⬡ ${prefix}grup 
+│ ⬡ ${prefix}promote 
+│ ⬡ ${prefix}demote 
+│ ⬡ ${prefix}setdesc
+│ ⬡ ${prefix}setname
+│ ⬡ ${prefix}nsfw 1/0
+│ ⬡ ${prefix}kick 
+│ ⬡ ${prefix}add 
+│ ⬡ ${prefix}getbio
+│ ⬡ ${prefix}getname 
+│ ⬡ ${prefix}reminder 
+│ ⬡ ${prefix}listonline
+│ ⬡ ${prefix}sider reply
+│ ⬡ ${prefix}antilink on|off
+│ ⬡ ${prefix}tod
+│ ⬡ ${prefix}tospam amount
+│ ⬡ ${prefix}antihidetag on|off
+│ ⬡ ${prefix}antivirtex on|off
+│ ⬡ ${prefix}autojoin on|off
+│ ⬡ ${prefix}kickarea
+╰────────────────  
+
+ ❑ ᴏᴛʜᴇʀ ғᴇᴀᴛᴜʀᴇs
+╭──────────────── 
+│ ⬡ ${prefix}ping
+│ ⬡ ${prefix}alive
+│ ⬡ ${prefix}status
+│ ⬡ ${prefix}inspect
+│ ⬡ ${prefix}join
+│ ⬡ ${prefix}dice
+│ ⬡ ${prefix}numbers [number]
+│ ⬡ ${prefix}quote
+│ ⬡ ${prefix}write text
+│ ⬡ ${prefix}writeleft text
+│ ⬡ ${prefix}folioleft text
+│ ⬡ ${prefix}folioright text
+│ ⬡ ${prefix}ss link web
+│ ⬡ ${prefix}songlyrics <query>
+│ ⬡ ${prefix}namemeaning <name>
+│ ⬡ ${prefix}debug
+│ ⬡ ${prefix}loli 
+│ ⬡ ${prefix}debug2
+│ ⬡ ${prefix}infoearthquake
+│ ⬡ ${prefix}recipes
+│ ⬡ ${prefix}chat 91|P
+│ ⬡ ${prefix}searchmessage <query>
+│ ⬡ ${prefix}get url
+│ ⬡ ${prefix}githubstalk <query>
+│ ⬡ ${prefix}ytsearch <query>
+│ ⬡ ${prefix}igstalk <query>
+│ ⬡ ${prefix}tiktokstalk <query>
+│ ⬡ ${prefix}play <query>
+│ ⬡ ${prefix}video <query>
+│ ⬡ ${prefix}igstory <username>
+│ ⬡ ${prefix}twitter <link>
+│ ⬡ ${prefix}tiktok <link>
+│ ⬡ ${prefix}fb <link>
+│ ⬡ ${prefix}image <query>
+│ ⬡ ${prefix}anime <random>
+│ ⬡ ${prefix}pinterest <query>
+│ ⬡ ${prefix}comic <query>
+│ ⬡ ${prefix}lyrics <query>
+│ ⬡ ${prefix}chara <query>
+│ ⬡ ${prefix}playstore <query>
+╰──────────────── 
+
+
+ ❑ ᴍᴀᴋɪɴɢ ғᴇᴀᴛᴜʀᴇs
+╭──────────────── 
+│ ⬡ ${prefix}sticker
+│ ⬡ ${prefix}swm author|packname
+│ ⬡ ${prefix}take author|packname
+│ ⬡ ${prefix}fdeface
+│ ⬡ ${prefix}attp text
+│ ⬡ ${prefix}emoji
+│ ⬡ ${prefix}golden text
+│ ⬡ ${prefix}flower text
+│ ⬡ ${prefix}wooden text
+│ ⬡ ${prefix}burn text
+│ ⬡ ${prefix}glow text
+│ ⬡ ${prefix}summer text
+│ ⬡ ${prefix}neon text
+│ ⬡ ${prefix}coffeecup text
+│ ⬡ ${prefix}coffeecup2 text
+│ ⬡ ${prefix}battlefield text|text
+│ ⬡ ${prefix}googletxt2 text|text
+│ ⬡ ${prefix}transformer text|text
+│ ⬡ ${prefix}write text
+│ ⬡ ${prefix}waifu
+│ ⬡ ${prefix}phlogo *text|text
+│ ⬡ ${prefix}tfire text
+│ ⬡ ${prefix}phcomment text|text
+│ ⬡ ${prefix}wolf text
+│ ⬡ ${prefix}ytgol text
+│ ⬡ ${prefix}ytsilver text
+│ ⬡ ${prefix}t3d text
+│ ⬡ ${prefix}logoa text|text
+│ ⬡ ${prefix}marvel text|text
+│ ⬡ ${prefix}leavest text
+│ ⬡ ${prefix}neon2 text
+│ ⬡ ${prefix}wall text
+│ ⬡ ${prefix}notewrite text
+╰────────────────  
+
  
 
- ⬣ 𝙂𝙍𝙊𝙐𝙋 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}grup 
-> ⬡ ${prefix}promote 
-> ⬡ ${prefix}demote 
-> ⬡ ${prefix}setdesc
-> ⬡ ${prefix}setname
-> ⬡ ${prefix}nsfw 1/0
-> ⬡ ${prefix}kick 
-> ⬡ ${prefix}add 
-> ⬡ ${prefix}getbio
-> ⬡ ${prefix}getname 
-> ⬡ ${prefix}reminder 
-> ⬡ ${prefix}listonline
-> ⬡ ${prefix}sider reply
-> ⬡ ${prefix}antilink on|off
-> ⬡ ${prefix}tod
-> ⬡ ${prefix}tospam amount
-> ⬡ ${prefix}antihidetag on|off
-> ⬡ ${prefix}antivirtex on|off
-> ⬡ ${prefix}autojoin on|off
-> ⬡ ${prefix}kickarea
+ ❑ ᴄᴏɴᴠᴇʀᴛ ғᴇᴀᴛᴜʀᴇs
+╭────────────────  
+│ ⬡ ${prefix}tomp3
+│ ⬡ ${prefix}tomp4
+│ ⬡ ${prefix}toimg
+│ ⬡ ${prefix}slow
+│ ⬡ ${prefix}fast
+│ ⬡ ${prefix}reverse
+│ ⬡ ${prefix}tourl
+╰────────────────  
  
 
- ⬣ 𝙈𝘼𝙆𝙄𝙉𝙂 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}sticker
-> ⬡ ${prefix}swm author|packname
-> ⬡ ${prefix}take author|packname
-> ⬡ ${prefix}fdeface
-> ⬡ ${prefix}attp text
-> ⬡ ${prefix}emoji
-> ⬡ ${prefix}golden text
-> ⬡ ${prefix}flower text
-> ⬡ ${prefix}wooden text
-> ⬡ ${prefix}burn text
-> ⬡ ${prefix}glow text
-> ⬡ ${prefix}summer text
-> ⬡ ${prefix}neon text
-> ⬡ ${prefix}coffeecup text
-> ⬡ ${prefix}coffeecup2 text
-> ⬡ ${prefix}battlefield text|text
-> ⬡ ${prefix}googletxt2 text|text
-> ⬡ ${prefix}transformer text|text
-> ⬡ ${prefix}write text
-> ⬡ ${prefix}waifu
-> ⬡ ${prefix}phlogo *text|text
-> ⬡ ${prefix}tfire text
-> ⬡ ${prefix}phcomment text|text
-> ⬡ ${prefix}wolf text
-> ⬡ ${prefix}ytgol text
-> ⬡ ${prefix}ytsilver text
-> ⬡ ${prefix}t3d text
-> ⬡ ${prefix}logoa text|text
-> ⬡ ${prefix}marvel text|text
-> ⬡ ${prefix}leavest text
-> ⬡ ${prefix}neon2 text
-> ⬡ ${prefix}wall text
-> ⬡ ${prefix}notewrite text
-
+ ❑ ᴅᴏᴡɴʟᴏᴀᴅ ғᴇᴀᴛᴜʀᴇs
+╭────────────────  
+│ ⬡ ${prefix}play query
+│ ⬡ ${prefix}ytmp4 link
+│ ⬡ ${prefix}ytmp3 link
+│ ⬡ ${prefix}video query
+│ ⬡ ${prefix}instagram link
+│ ⬡ ${prefix}twitter
+│ ⬡ ${prefix}facebook link
+│ ⬡ ${prefix}tiktokdl
+╰────────────────  
  
 
- ⬣ 𝘾𝙊𝙉𝙑𝙀𝙍𝙏 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}tomp3
-> ⬡ ${prefix}tomp4
-> ⬡ ${prefix}toimg
-> ⬡ ${prefix}slow
-> ⬡ ${prefix}fast
-> ⬡ ${prefix}reverse
-> ⬡ ${prefix}tourl
+ ❑ ᴛᴀɢ ғᴇᴀᴛᴜʀᴇs
+╭────────────────  
+│ ⬡ ${prefix}hidetag
+│ ⬡ ${prefix}contag
+│ ⬡ ${prefix}sticktag
+│ ⬡ ${prefix}totag
+╰────────────────  
+
+ ❑ ᴜᴘsᴡ ғᴇᴀᴛᴜʀᴇs
+╭────────────────  
+│ ⬡ ${prefix}upswtxt
+│ ⬡ ${prefix}upswlocation
+│ ⬡ ${prefix}upswsticker
+│ ⬡ ${prefix}upswimage
+│ ⬡ ${prefix}upswvideo
+│ ⬡ ${prefix}upswgif
+╰────────────────  
  
 
- ⬣ 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}play query
-> ⬡ ${prefix}ytmp4 link
-> ⬡ ${prefix}ytmp3 link
-> ⬡ ${prefix}video query
-> ⬡ ${prefix}instagram link
-> ⬡ ${prefix}twitter
-> ⬡ ${prefix}facebook link
-> ⬡ ${prefix}tiktokdl
+ ❑ ғᴜɴ ғᴇᴀᴛᴜʀᴇs
+╭────────────────  
+│ ⬡ ${prefix}slander
+│ ⬡ ${prefix}slanderpc
+│ ⬡ ${prefix}contact 0|p
+│ ⬡ ${prefix}suit
+│ ⬡ ${prefix}toxic
+│ ⬡ ${prefix}dice
+│ ⬡ ${prefix}intake
+│ ⬡ ${prefix}viewonce
+│ ⬡ ${prefix}hbd
+│ ⬡ ${prefix}herodetail hero name
+│ ⬡ ${prefix}herolist hero name
+│ ⬡ ${prefix}beautycheck @tag
+│ ⬡ ${prefix}uglycheck @tag
+│ ⬡ ${prefix}handsomecheck @tag
+│ ⬡ ${prefix}lesbicheck @tag
+│ ⬡ ${prefix}character @tag
+│ ⬡ ${prefix}gaycheck @tag
+│ ⬡ ${prefix}is
+│ ⬡ ${prefix}can
+│ ⬡ ${prefix}rate
+│ ⬡ ${prefix}when
+╰────────────────  
+
+ ❑ ɴsғᴡ ғᴇᴀᴛᴜʀᴇs
+╭────────────────  
+│ ⬡ ${prefix}yuri
+│ ⬡ ${prefix}hentai
+│ ⬡ ${prefix}anal
+│ ⬡ ${prefix}eroneko
+│ ⬡ ${prefix}lesbian
+│ ⬡ ${prefix}kitsune
+│ ⬡ ${prefix}bj
+│ ⬡ ${prefix}pussy
+│ ⬡ ${prefix}wallpaper
+│ ⬡ ${prefix}neko2
+│ ⬡ ${prefix}baka
+│ ⬡ ${prefix}slap
+│ ⬡ ${prefix}poke
+│ ⬡ ${prefix}keta
+│ ⬡ ${prefix}awoo
+│ ⬡ ${prefix}blowjob
+│ ⬡ ${prefix}megumin
+│ ⬡ ${prefix}neko
+│ ⬡ ${prefix}trapnime
+╰────────────────  
  
-
- ⬣ 𝙏𝘼𝙂 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}hidetag
-> ⬡ ${prefix}contag
-> ⬡ ${prefix}sticktag
-> ⬡ ${prefix}totag
- 
-
- ⬣ 𝙐𝙋𝙎𝙒 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}upswtxt
-> ⬡ ${prefix}upswlocation
-> ⬡ ${prefix}upswsticker
-> ⬡ ${prefix}upswimage
-> ⬡ ${prefix}upswvideo
-> ⬡ ${prefix}upswgif
- 
-
- ⬣ 𝙁𝙐𝙉 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}slander
-> ⬡ ${prefix}slanderpc
-> ⬡ ${prefix}contact 0|p
-> ⬡ ${prefix}suit
-> ⬡ ${prefix}toxic
-> ⬡ ${prefix}dice
-> ⬡ ${prefix}intake
-> ⬡ ${prefix}viewonce
-> ⬡ ${prefix}hbd
-> ⬡ ${prefix}herodetail hero name
-> ⬡ ${prefix}herolist hero name
-> ⬡ ${prefix}beautycheck @tag
-> ⬡ ${prefix}uglycheck @tag
-> ⬡ ${prefix}handsomecheck @tag
-> ⬡ ${prefix}lesbicheck @tag
-> ⬡ ${prefix}character @tag
-> ⬡ ${prefix}gaycheck @tag
-> ⬡ ${prefix}is
-> ⬡ ${prefix}can
-> ⬡ ${prefix}rate
-> ⬡ ${prefix}when
-
-
- ⬣ 𝙉𝙎𝙁𝙒 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}yuri
-> ⬡ ${prefix}hentai
-> ⬡ ${prefix}anal
-> ⬡ ${prefix}eroneko
-> ⬡ ${prefix}lesbian
-> ⬡ ${prefix}kitsune
-> ⬡ ${prefix}bj
-> ⬡ ${prefix}pussy
-> ⬡ ${prefix}wallpaper
-> ⬡ ${prefix}neko2
-> ⬡ ${prefix}baka
-> ⬡ ${prefix}slap
-> ⬡ ${prefix}poke
-> ⬡ ${prefix}keta
-> ⬡ ${prefix}awoo
-> ⬡ ${prefix}blowjob
-> ⬡ ${prefix}megumin
-> ⬡ ${prefix}neko
-> ⬡ ${prefix}trapnime
- 
-𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
 `
-sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`credit`,buttonText:{displayText:'THANKS TO'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`,`ʙᴏᴛ ʙʏ @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`credit`,buttonText:{displayText:'THANKS TO'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
         case 'alive':
