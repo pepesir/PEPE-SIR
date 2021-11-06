@@ -140,7 +140,7 @@ fkontakk = { key: {
     participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '916909137213-1604595598@g.us' } : {})
 },
  message: {
-    "contactMessage":{"displayName":'Xeon',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;Xeon;;;\nFN:resku\nitem1.TEL;waid=916909137213:+91 690-9137-213\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+    "contactMessage":{"displayName":'Pepe',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;Xeon;;;\nFN:resku\nitem1.TEL;waid=917736622139:+91 690-9137-213\nitem1.X-ABLabel:Mobile\nEND:VCARD"
  }}}
 metdata = await client.groupMetadata(anu.jid)
 if(anu.announce == 'false'){
@@ -245,7 +245,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
         );
         buttons = [
           { buttonId: `verify`, buttonText: { displayText: "𝑽𝒆𝒓𝒊𝒇𝒚㋛︎" }, type: 1 },
-          { buttonId: `command`, buttonText: { displayText: "𝑪𝒍𝒊𝒄𝒌 𝑴𝒆𝒏𝒖㋛︎" }, type: 1 },
+          { buttonId: `command`, buttonText: { displayText: "𝑪𝒍𝒊𝒄𝒌 𝑴𝒆𝒏𝒖︎" }, type: 1 },
         ];
         imageMsg = (
           await client.prepareMessageMedia(buff, "imageMessage", {
@@ -254,7 +254,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
         ).imageMessage;
         buttonsMessage = {
           contentText: `${teks}`,
-          footerText: `㋛ 𝘙𝘶𝘯𝘵𝘪𝘮𝘦 ${runtime(process.uptime())} \n 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 ${fakeyoi}`,
+          footerText: ` 𝘙𝘶𝘯𝘵𝘪𝘮𝘦 ${runtime(process.uptime())} \n 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 ${fakeyoi}`,
           imageMessage: imageMsg,
           buttons: buttons,
           headerType: 4,
@@ -282,8 +282,8 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
           )}&pp=${pp_user}&bg=https://i.postimg.cc/rFkw8MpX/IMG-20210807-151325.jpg`
         );
         buttons = [
-          { buttonId: `y`, buttonText: { displayText: "𝘉𝘺𝘦𝘦シ︎" }, type: 1 },
-          { buttonId: `runtime`, buttonText: { displayText: "𝘙𝘶𝘯𝘵𝘪𝘮𝘦シ︎" }, type: 1 },
+          { buttonId: `y`, buttonText: { displayText: "𝘉𝘺𝘦𝘦︎" }, type: 1 },
+          { buttonId: `runtime`, buttonText: { displayText: "𝘙𝘶𝘯𝘵𝘪𝘮𝘦︎" }, type: 1 },
         ];
         imageMsg = (
           await client.prepareMessageMedia(buff, "imageMessage", {
@@ -292,7 +292,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
         ).imageMessage;
         buttonsMessage = {
           contentText: `${out}`,
-          footerText: `㋛︎ 𝘙𝘶𝘯𝘵𝘪𝘮𝘦 ${runtime(process.uptime())} \n 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 ${fakeyoi}🌹`,
+          footerText: `︎ 𝘙𝘶𝘯𝘵𝘪𝘮𝘦 ${runtime(process.uptime())} \n 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 ${fakeyoi}🌹`,
           imageMessage: imageMsg,
           buttons: buttons,
           headerType: 4,
@@ -446,3 +446,5 @@ function uncache(module = ".") {
 
 starts();
 // Dont delete the credit wrote on top :V
+        
+        
