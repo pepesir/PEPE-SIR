@@ -372,20 +372,7 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `❑ Hi ${pushname} 🐦 ${ucapanWaktu} \n\n❑ Before Using the Bot Verify First 🙂`
-       const daftar2 = '```Click the button below to verify bro or type #verify\n𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 😎```'
-       const daftar3 = [
-          {
-            buttonId: `verify`,
-            buttonText: {
-              displayText: `Verify`,
-            },
-            type: 1,
-          },]
-var hayuk0 = '[NOT VERIFIED]'
-			if (isRegistered) {
-			hayuk0 = '[√ VERIFIED]'
-			}
+    
     //Y
 const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 		const timeWita = moment().tz('Asia/Makassar').format('DD/MM HH:mm:ss')
@@ -1288,41 +1275,7 @@ await xeon.setStatus(`Bot Mode On Since ${uptime}`).catch((_) => _);
     }
     if (!mek.key.fromMe && banChats === true) return;
 switch (command) {
-case 'verify':
-              
-if (isRegistered) return reply('Your account is verified')
-const serialUser = createSerial(18)
-	         try {
-								ppimg = await xeon.getProfilePicture(`${sender.split('@')[0]}@c.us`)
-								} catch {
-								ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-							}
-	        veri = sender
-	        _registered.push(sender)
-	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
-	        addRegisteredUser(sender, serialUser)
-	         const anuu = `「 *USER REGISTRATION* 」
-*Thank you for registering in the 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁😎 Database*
 
-*☂︎ Name :* ${pushname}
-*☂︎ API :* +${sender.split('@')[0]}
-*☂︎ Serial:* ${serialUser}
-*☂ ︎Total:* ${_registered.length} User
-
-*「 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 」*`
-         haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `menu`,buttonText:{displayText: `</️MENU`},type:1}]
-              imageMsg = (await xeon.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-              buttonsMessage = {footerText:'ᴘᴇᴘᴇ', imageMessage: imageMsg,
-              contentText:`${anuu}`,buttons,headerType:4}
-              prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
-              xeon.relayWAMessage(prep)
-	         console.log(color('[REGISTER]'), color(time, 'yellow'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
-	    // console.log(e)
-            setTimeout( () => {
-			xeon.updatePresence(from, Presence.composing)
-			reply(`*Thank you for being registered 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁*`)
-		}, 2000)
         break
       
 case 'help':
