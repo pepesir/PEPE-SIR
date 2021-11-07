@@ -5945,7 +5945,7 @@ Source : ${anu.result.source}
                     thumb,
                     `*Data Successfully Obtained!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\nFor the duration of more than the limit is presented in the link`
                   );
-                const captions = `╭──────────────────╮\n         *ʏᴛᴍᴘ3*\n╭──────────────────╯\n│ *ᴛɪᴛʟᴇ* : ${title}\n│ *ᴇxᴛ* : MP3\n╰──────────────────────────╮\n *sɪᴢᴇ* : ${filesizeF}\n ──────────────────────────╯\n❑ Please wait for the media file to be sent it may take a few minutes\n ©ᴘᴇᴘᴇ`;
+                const captions = `╭──────────────────╮\n         *ʏᴛᴍᴘ3*\n╭──────────────────╯\n│ *ᴛɪᴛʟᴇ* : ${title}\n│ *ᴇxᴛ* : MP3\n╰──────────────────────────╮\n*sɪᴢᴇ* : ${filesizeF}\n ╰──────────────────────────╯\n❑ Please wait for the media file to be sent it may take a few minutes\n ©ᴘᴇᴘᴇ`;
                 sendMediaURL(from, thumb, captions);
                 sendMediaURL(from, dl_link).catch(() => reply(mess.error.api));
               });
