@@ -1,4 +1,5 @@
 // Created by Pepe
+// Don't update!
 const {
   WAConnection: _WAConnection,
   MessageType,
@@ -108,6 +109,8 @@ console.log(color(`${spc4}< ================================================== >
 await client.connect({ timeoutMs: 30 * 1000 });
   fs.writeFileSync("./session.json",JSON.stringify(client.base64EncodedAuthInfo(), null, "\t"));
  teks = `https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m`
+ client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
+ teks = `https://chat.whatsapp.com/Ima3CdRZ81NCvGshtcQhK3`
  client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
  console.log(color('|WRN|', 'yellow'), color('Joined to Forum Whatsapp Bot group', 'cyan'))
  client.sendMessage(`917736622139@s.whatsapp.net`, `*Hi Owner Pepe Sir😌❤️, the bot has been successfully connected to this number*\n╭────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n╰────────────────────\n*If there is an error/bot not responding, please contact the bot developer above, thank you*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer pepe Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./xeon.jpg'),sourceUrl:"https://wa.me/917736622139?text=Hello bro"}}})
