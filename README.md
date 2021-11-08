@@ -113,7 +113,7 @@ My Personal Chat👇
 
 My Whatsapp Group👇
 <p align="center">
- <a href="https://chat.whatsapp.com/Le4eIrUXLo8BbUoA5efUfb"><img alt="WhatsApp Group" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=black"/></a>
+ <a href="https://chat.whatsapp.com/ESkhpL7DdlE9AcaUs2b7g1"><img alt="WhatsApp Group" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=black"/></a>
 </p>
 
 * [`My Youtube Channel`](https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA)
@@ -157,7 +157,7 @@ you can contact us
   </div>
  
 
-  [![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://chat.whatsapp.com/Ima3CdRZ81NCvGshtcQhK3)
+  [![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://chat.whatsapp.com/ESkhpL7DdlE9AcaUs2b7g1)
 
 # Thanks To
 * [`Pepe`](https://github.com/pepesir)
