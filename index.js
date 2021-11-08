@@ -1,6 +1,6 @@
 // Script by Pepe
-// 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁
-// ©Pepe Bot Incorporated
+// 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 | 𝙳𝙾𝙽'𝚃 𝙲𝙷𝙰𝙽𝙶𝙴 𝙲𝚁𝙴𝙳𝙸𝚃𝚂🙂
+// ©Pepe Bot 
 const {
   WAConnection: _WAConnection,
   MessageType,
@@ -414,8 +414,8 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 cmhit.push(command)
     //MESS
     mess = {
-      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 ︎",
-      success: "Success シ︎",
+      wait: "◩ ᴡᴀɪᴛ ᴀ ᴍɪɴᴜᴛᴇ",
+      success: "Success ︎",
       wrongFormat: "Wrong format, try again in the menu",
       error: {
         stick: "not that sticker :v",
@@ -916,7 +916,7 @@ xeon.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
       xeon.groupAdd(from, orangnya);
     };
         const grupinv = (teks) => {
-        	grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `Xeon Bot Inc.`, "footerText": "*_𝙿𝙴𝙿𝙴 𝚂𝙸𝚁_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
+        	grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `Pepe Bot Ofc.`, "footerText": "*_𝙿𝙴𝙿𝙴 𝚂𝙸𝚁_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
             xeon.relayWAMessage(grup)
         }
 const fakeitem = (teks) => {
@@ -1304,10 +1304,10 @@ const serialUser = createSerial(18)
 	         const anuu = `「 *USER REGISTRATION* 」
 *Thank you for registering in the 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁😎 Database*
 
-*☂︎ Name :* ${pushname}
-*☂︎ API :* +${sender.split('@')[0]}
-*☂︎ Serial:* ${serialUser}
-*☂ ︎Total:* ${_registered.length} User
+▢ *ɴᴀᴍᴇ :* ${pushname}
+▢ *ᴀᴘɪ :* +${sender.split('@')[0]}
+▢ *sᴇʀɪᴀʟ :* ${serialUser}
+▢ *ᴛᴏᴛᴀʟ :* ${_registered.length} User
 
 *「 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
@@ -1673,7 +1673,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 │        ©917736622139
 │
 │  ❑ *ɢɪᴛʜᴜʙ ʟɪɴᴋ* :
-│  ɴᴏᴛ ʏᴇᴛ ᴘᴜʙʟɪᴄ
+│  https://github.com/pepesir/PEPE-SIR
 │
 │  ❑ *ʙᴏᴛ ɢʀᴏᴜᴘ ʟɪɴᴋ*
 │  https://tinyurl.com/yz6dm8ep
@@ -2514,7 +2514,7 @@ case 'git':
 case 'script':
 		case 'sc':
 		case 'sourcecode':
-		xeon.sendMessage(from, { text: "SCRIPT SOON MAKING PUBLIC", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		xeon.sendMessage(from, { text: "╭─➤ *ᴘᴇᴘᴇ sɪʀ*\n│       ❑  *sᴄʀɪᴘᴛ*\n│❖   ɢɪᴛʜᴜʙ:\n│❖   https://github.com/pepesir/PEPE-SIR\n│❖   ʏᴏᴜᴛᴜʙᴇ:\n│❖   https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA\n│❖   ᴡᴀᴛsᴀᴘᴘ ɢʀᴏᴜᴘ:\n│❖   https://chat.whatsapp.com/Le4eIrUXLo8BbUoA5efUfb\n╰────────────────❋ཻུ۪۪⸙\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘\n             ᴘᴇᴘᴇ sɪʀ\n\n╭◪ *ᴄᴏᴅᴅᴇᴅ ʙʏ ᴘᴇᴘᴇ*\n╰─────────────────❋ཻུ۪۪⸙", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
       //------------------< Sticker Cmd >-------------------
       case "addcmd":
@@ -3708,7 +3708,7 @@ case 'hacked':
                 await sleep(1000)
                 xeon.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
 case 'mygithub':
-  reply('SCRIPT SOON MAKING PUBLIC')
+  reply('https://github.com/pepesir/PEPE-SIR')
 					break;
    case 'ss':
       reply(mess.wait)
@@ -3983,7 +3983,7 @@ case 'debug2':
       {
         "urlButton": {
           "displayText": `Script ${fakeyoi}`,
-          "url": "SCRIPT SOON MAKING PUBLIC"
+          "url": "https://github.com/pepesir/PEPE-SIR"
         },
         "index": 0
       }
@@ -5943,9 +5943,9 @@ Source : ${anu.result.source}
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*Data Successfully Obtained!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
+                    `*Data Successfully Obtained!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\nFor the duration of more than the limit is presented in the link`
                   );
-                const captions = `*YTMP3*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
+                const captions = `╭──────────────────╮\n         *ʏᴛᴍᴘ3*\n╭──────────────────╯\n│ *ᴛɪᴛʟᴇ* : ${title}\n│ *ᴇxᴛ* : MP3\n╰──────────────────────────╮\n*sɪᴢᴇ* : ${filesizeF}\n╰───────────────────────────╯\n❑ Please wait for the media file to be sent it may take a few minutes\n\n ©ᴘᴇᴘᴇ`;
                 sendMediaURL(from, thumb, captions);
                 sendMediaURL(from, dl_link).catch(() => reply(mess.error.api));
               });
@@ -6273,7 +6273,7 @@ if (_chats.startsWith('$')){
 if (!isOwner)return// reply(`This command can not be carried out by rent bot temporarily`)
 if (!q)return 
 var itsme = `${sender}`
-var split = `*Xeon Bot Inc.*`
+var split = `*Pepe Bot Inc.*`
 const term = {
 contextInfo: {
 participant: itsme,
@@ -6352,7 +6352,7 @@ xeon.sendMessage(from, stdout, text, term)
     if (isGroup && budy != undefined) {
     } else {
       console.log(
-        color("[Doge Bot]", "red"),
+        color("[Pepe Bot]", "red"),
         "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁",
         color(sender.split("@")[0])
       );
