@@ -18,8 +18,13 @@
 <a href="https://chat.whatsapp.com/ESkhpL7DdlE9AcaUs2b7g1"><img title="Author" src="https://img.shields.io/badge/Watsapp-Group-blue.svg?style=for-the-badge&logo=whatsapp" /></a> <a href="https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA"><img title="Author" src="https://img.shields.io/badge/Youtube-PEPESIR-blue.svg?style=for-the-badge&logo=youtube" /></a>
 </p>
 
-## Deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/pepesir/PEPE-SIR/)
+
+  ### Simple Method
+  
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/pepesir/PEPE-SIR) 
+  
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@pepesir/PEPE-SIR-Qr-code?v=1)
+
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
